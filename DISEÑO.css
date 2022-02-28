@@ -1,0 +1,136 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Bahnschrift SemiBold;
+}
+html{
+	background-color: darkslategray;
+}
+.titular{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),url(IMAGENES/FONDO.jpg);
+	background-size: cover ;
+	background-position: center;
+}
+
+.navbar{
+	width: 85%;
+	margin: auto;
+	padding: 35px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo{
+	width: 150px;
+	height: 150px;
+	cursor: pointer;
+	border-radius: 50%;
+	object-fit: cover;
+
+}
+
+.navbar ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+	position: relative;
+}
+
+.navbar ul li a{
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+
+}
+
+.navbar ul li::after{
+	content: '';
+	height: 3px;
+	width: 0;
+	background-color: #009688;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	transition-duration: 0.5s;
+
+}
+.navbar ul li:hover::after{
+	width: 100%;
+}
+
+.contenido{
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	color: white;
+}
+
+.contenido h1{
+	font-size: 70px;
+	margin-top:80px;
+	font-family: Trebuchet MS;
+}
+
+.contenido p{
+	margin: 20px auto;
+	font-weight: 100;
+	line-height: 25px;
+	font-size: 18px;
+}
+
+.contenido2{
+	
+	position: absolute;
+	top: 50%;
+	transform: translateY(-15%);
+	text-align: justify;
+	color: white;
+	padding: 35px;
+}
+
+.contenido2 h1{
+	font-size: 70px;
+	margin-top:10px;
+	font-family: Trebuchet MS;
+	background-color: darkslategray;
+	color: white;
+	font-style:	italic;
+	text-align: center;
+}
+
+.contenido2 p{
+	margin: 20px auto;
+	font-weight: 100;
+	line-height: 25px;
+	font-size: 18px;
+}
+
+img{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	object-fit: cover;
+	padding: 35px;
+}
+.secciones{
+	display: flex;
+	padding: 25px;
+	align-items: center;
+}
+
+.secciones p{
+	padding: 30px;
+}
+.encabeza p{
+	margin: 10px auto;
+	font-weight: 100;
+	line-height: 25px;
+	font-size: 18px;
+	text-align: center;
+}
+
