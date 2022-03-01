@@ -87,15 +87,16 @@ html{
 	
 	position: absolute;
 	top: 50%;
-	transform: translateY(-15%);
+	transform: translateY(-10%);
 	text-align: justify;
 	color: white;
 	padding: 35px;
+	font-size: 18px;
 }
 
 .contenido2 h1{
 	font-size: 70px;
-	margin-top:10px;
+	margin-top:40px;
 	font-family: Trebuchet MS;
 	background-color: darkslategray;
 	color: white;
@@ -110,6 +111,61 @@ html{
 	font-size: 18px;
 }
 
+.contenido3{
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-40%);
+	text-align: center;
+	color: white;
+}
+
+.contenido3 h1{
+	font-size: 70px;
+	margin-top:80px;
+	font-family: Trebuchet MS;
+}
+
+.contenido3 p{
+	margin: 20px auto;
+	font-weight: 100;
+	line-height: 25px;
+	font-size: 18px;
+}
+
+button{
+	width: 200px;
+	padding: 15px 0;
+	text-align: center;
+	margin: 20px 10px;
+	border-radius: 25px;
+	font-weight: bold;
+	border:  2px solid darkslategray;
+	background: transparent;
+	color: white;
+	cursor: pointer;
+	font-size: 18px;
+	position: relative;
+	overflow: hidden;
+}
+
+span{
+	background: darkslategray;
+	height: 100%;
+	width: 0;
+	border-radius: 25px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: -1;
+	transition-duration: 0.5s;
+}
+button:hover span{
+	width: 100%;
+}
+button:hover{
+	border: none;
+}
 img{
 	width: 200px;
 	height: 200px;
@@ -119,18 +175,65 @@ img{
 }
 .secciones{
 	display: flex;
-	padding: 25px;
+	padding: 10px;
 	align-items: center;
+	
+  border-radius: 35px;
+ 
+  border-bottom: 6px solid black;
 }
 
 .secciones p{
-	padding: 30px;
+	padding: 25px;
+
 }
 .encabeza p{
-	margin: 10px auto;
+	margin: 20px auto;
 	font-weight: 100;
 	line-height: 25px;
 	font-size: 18px;
 	text-align: center;
 }
-
+thead{
+	font-family: "Nunito-semibold";
+	font-size: 30px;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	background-color: darkslategray;
+	border-bottom: solid 5px black;
+}
+tbody{
+	font-family: "Nunito-semibold";
+	font-size: 25px;
+	text-align: center;
+	color: black;
+}
+table{
+	width: 100%;
+	background-color: antiquewhite;
+	text-align: center;
+	border-collapse: collapse;
+	transform: translateX(-50px);
+	
+}
+th,td{
+	border: solid 3px black;
+	padding: 20px;
+}
+tr:nth-child(even){
+	background-color: white;
+}
+tr:hover td{
+	background-color: black;
+	color: white;
+}
+.tabla{
+	color: black;
+	font-family: sans-serif;
+	
+}
+#principal{
+	width: 600px;
+	margin: 150px auto;
+}
